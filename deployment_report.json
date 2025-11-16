@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-16 01:18:00",
+  "backend_server": {
+    "status": "not started",
+    "url": "http://localhost:8000",
+    "docs": "http://localhost:8000/docs"
+  },
+  "photon": {
+    "status": "not configured"
+  },
+  "apk": {
+    "original": "/workspace/full thang/Dragon Land (1).apk",
+    "modified": "not modified",
+    "size_mb": 0
+  },
+  "appetize": {
+    "status": "not uploaded"
+  },
+  "tests": {
+    "APK loads without crashes": "import sys",
+    "Connects to server (check logs)": "sys.path.insert(0, '.')",
+    "Player authentication works": "from deploy_complete import deploymentautomation",
+    "Main menu displays correctly": "",
+    "Can start a level": "automation = deploymentautomation()",
+    "Dragon movement responds": "automation.step1_verify_environment()",
+    "Multiplayer lobby accessible (if applicable)": "\"",
+    "No network timeout errors": "curl -s http://localhost:8000/health || echo \"server not running\"",
+    "Game saves progress": "echo \"checking required files...\" && ls -la \"/workspace/full thang/dragon land (1).apk\" && ls -la /workspace/dragon_land_analysis.md && ls -la /workspace/dragon-land-server/",
+    "Performance is acceptable": "cd /workspace && python verify_environment.py"
+  }
+}
